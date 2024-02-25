@@ -1,3 +1,4 @@
+# Issue 1: Make Method Parameters Descriptive: Instead of using generic names like 'city_flight', 'num_nights' and 'num_days', use more descriptive names.
 def plane_cost(city_flight):
     # Calculate plane cost based on the chosen city
     if city_flight == "New York":
@@ -7,23 +8,23 @@ def plane_cost(city_flight):
     # Add more cities as needed
     else:
         return 0  # Default value if city is not recognized
-    
+# Issue 2: Use constants for Daily Rental Cost and Nightly cost: use constants for the daily rental cost and nightly cost instead of hardcoding them in functions.
 def car_rental_cost(num_days):
     # Calculate car rental cost based on the number of days
     daily_rental_cost = 50  # Replace with actual daily rental cost
     return num_days * daily_rental_cost
-
+# Issue 3: Add comments for Clarity: Add comments to explain the purpose of each function and any complex logic.
 def hotel_cost(num_nights):
     # Calculate hotel cost based on the number of nights
    nightly_cost = 100  # Replace with actual nightly cost
    return num_nights * nightly_cost
 
-
+# Issue 4: Handle Case-Insensitive City Comparison: Make the comparison of the chosen city case-sensitive.
 def holiday_cost(hotel_cost, plane_cost, car_rental_cost):
     # Calculate the total holiday cost
     total_cost = hotel_cost + plane_cost + car_rental_cost
     return total_cost
-
+# Issue 5: Improve Printing: Print the total cost with proper formatting
 def print_details(city_flight, num_nights, num_days):
     # Print out the details of the holiday
     print("Holiday Details:")
